@@ -1,4 +1,4 @@
-""" Given a string representing a simple fraction "x/y", 
+""" Given a string representing a simple fraction x/y, 
 function returns a string representing the corresponding mixed fraction in the following format:  [sign]a b/c
 Provide [sign] only if negative (and non zero) and only at the beginning of the number. """
 
