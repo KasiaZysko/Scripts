@@ -7,6 +7,7 @@ import time
 
 TWITTER_EMAIL = "*****"
 TWITTER_PASSWORD = "***"
+TWITTER_USERNAME = "****** ***"
 CHROME_DRIVER_PATH = "D:\chromedriver\chromedriver.exe"
 
 
@@ -37,7 +38,7 @@ class InternetSpeedTwitterBot:
         time.sleep(2)
         try:
             email_container = self.driver.find_element(By.NAME, 'text')
-            email_container.send_keys('@NetSpeedBot')
+            email_container.send_keys(TWITTER_USERNAME)
             email_container.send_keys(Keys.ENTER)
         except common.exceptions.NoSuchElementException:
             pass
